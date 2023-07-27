@@ -1,7 +1,41 @@
+<template>
+<!--Header-->
+<header class="header_container">
+    <a class="header_item1" href="index.html">
+        <img src="./img/logo.png" alt="logo" width="50%">
+        </a> 
+    <img src="./img/searchbar.png.png" id="searchbar" alt="searchbar" width="30%">
+    <nav class="header_item2">
+        <ul class="menu_container">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="index.html">Books</a>
+            </li><li>
+                <a href="index.html">Reviews</a>
+            </li>
+            <li>
+                <a href="index.html">Sign In</a>
+            </li>
+            <li>
+                <a href="index.html">Community</a>
+            </li>
+        
+        </ul>
+    </nav>
+</header>
+    
+</template>
+<script>
+export default {}
+
+
+</script>
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 .header_container {
     background-color:  #713E5A;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,3 +81,4 @@
     text-transform: uppercase;
     
 }
+</style>
