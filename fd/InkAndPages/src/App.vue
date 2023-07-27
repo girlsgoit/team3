@@ -1,18 +1,13 @@
 <script setup>
 import SiteFooter from './components/SiteFooter.vue'
+import SiteHeader from './components/SiteHeader.vue';
 </script>
 
 <template>
-  <header>
-    
 
-    <div>
-      
-     
-    </div>
-  </header>
-
+  <SiteHeader />
   <RouterView />
+
   <SiteFooter />
 </template>
 
