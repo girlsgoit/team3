@@ -1,2 +1,2 @@
 # team3
-Team 3 - Summercamp23
+Team 3 - Summercamp23 - GirlsGoIt
