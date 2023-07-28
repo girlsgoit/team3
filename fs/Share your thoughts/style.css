@@ -32,8 +32,8 @@ h1 {
     padding: 50px;
 }
 
-h4{
-    align-items: center;
+h5{
+    
     color: black;
 }
 
@@ -48,7 +48,7 @@ h4{
    
 }
 
-h5{
+.youranswer_container h5{
     color: black;
     padding-left: 25px;
     
