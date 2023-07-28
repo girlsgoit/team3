@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Raleway:wght@300&family=Roboto:wght@300&display=swap');
+
+body {background-color: #FFE5B4;}
+
+#welcome a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: white;
+    text-decoration: none;
+
+    opacity: 0;
+    transition: 0.5s;
+
+
+}
+#welcome a:hover {
+    transition: 0.5s;
+    opacity: 1;
+}
+
+#welcome {
+    max-width: 965px;
+    margin:auto;
+}
+
+#welcome ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+
+}
+
+#welcome li{
+font-family: 'Kaisei Decol', serif;
+    padding-top: 25px;
+    margin: 10px;
+    display: block;
+    width: 300px !important;
+    height: 300px !important;
+    position: relative;
+    text-align: center;
+    
+}
+  
+#welcome img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover !important;
+    object-position: center center;
+}
+
+
+#quote-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5px;
+    font-family: 'Kaisei Decol', serif;
+    padding: 2px 0;
+    margin: 100px auto;
+     
+    color: black;
+}
+
+.cite {
+    width: 960px;
+    text-align: center;
+    font-size: 22px;
+}
