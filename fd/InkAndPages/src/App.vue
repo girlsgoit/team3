@@ -7,9 +7,11 @@ import MostPopularReviewsView from './views/MostPopularReviewsView.vue';
 <template>
 
   <SiteHeader />
+
   <RouterView />
 
   <SiteFooter />
+
 </template>
 
 <style>
