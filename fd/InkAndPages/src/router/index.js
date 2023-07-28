@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import SiteFooter from "../components/SiteFooter.vue"
-
+import SiteHeader from "../components/SiteHeader.vue"
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -32,6 +32,31 @@ const router = createRouter({
       path: '/help',
       name: 'help',
       component: SiteFooter
+    },
+    {
+      path: '/home',
+      name: 'home',
+      component: SiteHeader
+    },
+    {
+      path: '/books',
+      name: 'books',
+      component: SiteHeader
+    },
+    {
+      path: '/reviews',
+      name: 'reviews',
+      component: SiteHeader
+    },
+    {
+      path: '/sing in',
+      name: 'sing in',
+      component: SiteHeader
+    },
+    {
+      path: '/community',
+      name: 'community',
+      component: SiteHeader
     }
   
   ]

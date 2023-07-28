@@ -8,18 +8,18 @@
     <nav class="header_item2">
         <ul class="menu_container">
             <li>
-                <a href="index.html">Home</a>
+                <RouterLink :to="{name:'home'}">Home</RouterLink>
             </li>
             <li>
-                <a href="index.html">Books</a>
+                <RouterLink :to="{name:'books'}">Books</RouterLink>
             </li><li>
-                <a href="index.html">Reviews</a>
+                <RouterLink :to="{name:'reviews'}">Reviews</RouterLink>
             </li>
             <li>
-                <a href="index.html">Sign In</a>
+                <RouterLink :to="{name:'sing in'}">Sing In</RouterLink>
             </li>
             <li>
-                <a href="index.html">Community</a>
+                <RouterLink :to="{name:'community'}">Community</RouterLink>
             </li>
         
         </ul>
