@@ -15,8 +15,10 @@ import DidYouKnow from '../components/DidYouKnow.vue';
     display: flex;
     max-height: 80vh;
     overflow: scroll;
+    background-color:  rgba(248, 140, 167, 0.4);
     -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+
     
 }
 
@@ -32,14 +34,13 @@ import DidYouKnow from '../components/DidYouKnow.vue';
     height: 100%;
     padding: 5px;
     margin: 0;
+    border-right: 2px solid black;
 
 }
 
 #know-section{
-    min-width: 30%;
+    min-width: 28%;
     min-height: 100%;
     margin: 0 0;
-    background-color:  rgba(248, 140, 167, 0.2);
-    border-left: 2px solid black;
 }
 </style>

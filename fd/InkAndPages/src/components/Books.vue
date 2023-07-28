@@ -108,9 +108,8 @@ export default {
 
 body {
 
-background-color:#FFE5B455;
-
-margin-left: 100px;
+padding-left: 30px;
+/* margin-left: 100px; */
 
 }
 

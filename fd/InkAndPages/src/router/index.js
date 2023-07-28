@@ -52,8 +52,8 @@ const router = createRouter({
       component: MostPopularReviewsView
     },
     {
-      path: '/sing in',
-      name: 'sing in',
+      path: '/sign in',
+      name: 'sign in',
       component: SiteHeader
     },
     {

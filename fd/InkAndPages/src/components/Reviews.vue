@@ -47,7 +47,7 @@ font-size: 12px;
 }
 
 textarea {
-    font-family: inter;
+    font-family: 'inter';
     font-size: 12px;
     }
 
@@ -143,5 +143,14 @@ width:100px;
 
 .title {
 width:260px;
+font-weight:500;
 }
+
+.text {
+
+font-weight:lighter;
+letter-spacing: 0px;
+
+}
+
 </style>

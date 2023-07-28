@@ -12,7 +12,7 @@
             <RouterLink :to="{name:'books', params:{genre: 'romance'}}">Romance</RouterLink>
             </li>
             <li>
-            <RouterLink :to="{name:'books', params:{genre: 'wastern'}}">Wastern</RouterLink>
+            <RouterLink :to="{name:'books', params:{genre: 'western'}}">Western</RouterLink>
             </li>
             <li>
             <RouterLink :to="{name:'books', params:{genre: 'literary fiction'}}">Literary fiction</RouterLink>
@@ -48,12 +48,10 @@ export default{
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+SA+Beginner&family=Lobster&family=Oswald:wght@600&display=swap');
 #left {
-    position:absolute;
     right:0px;
     top:0px;
     bottom:0px;
-    width: 30%;
-    background-color:  rgba(248, 140, 167, 0.2);
+    height: 100%;
     color:white;
    
 }
@@ -77,7 +75,8 @@ ul{
     flex-direction: column;
     justify-content: space-evenly;
     list-style-type: none;
-    height: 90vh;
+    height: 100%;
+    margin: 0;
 }
 
 li{
@@ -87,6 +86,17 @@ li{
     text-align: center;
    font-size: 20px;
    
+}
+
+a:visited{
+  color:#713E5A;
+}
+
+a {
+
+color:#713E5A;
+text-decoration: none;
+
 }
  
 </style>
