@@ -32,7 +32,7 @@ export default {}
 
 
 </script>
-<style>
+<style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 .header_container {
     background-color:  #713E5A;
