@@ -144,3 +144,22 @@ width:100px;
 width:260px;
 
 }
+
+button {
+
+display:flex;
+
+font-family: inter;
+font-weight: bolder;
+
+margin-top: 15px;
+margin-left:15px;
+padding:5px 7px 5px 7px;
+
+text-decoration: none;
+border: none;
+background-color: #f8a16744;
+
+border-radius:7px;
+
+}
