@@ -2,8 +2,127 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inika&family=Inria+Serif&display=swap');
+
 body {
 
 background-color:#FFE5B455;
+
+margin-left: 100px;
+
+}
+
+.books {
+
+font-family: "koh santepheap";
+font-weight: bolder;
+font-size: 48px;
+
+margin:0;
+padding-top:50px;
+
+}
+
+.week {
+
+font-family: inika;
+
+margin:0;
+
+}
+
+.weekquote {
+
+font-style: italic;
+font-family: "inria serif";
+font-size:20px;
+
+width:440px;
+
+}
+
+.weekbook {
+
+font-style: italic;
+font-weight: bolder;
+
+font-family: "inria serif";
+font-size:20px;
+
+width:440px;
+
+
+}
+
+.week2 {
+
+font-size: 36px;
+
+}
+
+.weekphoto {
+
+display:flex;
+
+border-radius:999px;
+
+width:200px;
+height:200px;
+
+}
+
+.weekauthor {
+
+font-family:inika;
+font-weight:bolder;
+
+padding-left:25px;
+padding-top:5px;
+
+}
+
+.author {
+
+display:flex;
+
+}
+
+.authorphoto {
+
+padding-left: 70px;
+padding-top:20px;
+
+}
+
+.news {
+
+font-family: inika;
+font-size:36px;
+
+}
+
+.list {
+
+list-style: none;
+
+padding-left:0;
+
+justify-content:space-between;
+max-width:720px;
+
+display:flex;
+
+}
+
+.image {
+
+height:210px;
+
+}
+
+li {
+
+font-size:18px;
+line-height:24px;
 
 }
