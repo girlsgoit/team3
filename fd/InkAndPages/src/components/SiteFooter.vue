@@ -3,7 +3,6 @@
 
 <title>footer</title>
 
-<link rel="stylesheet" href="style.css">
 
 </head>
 
