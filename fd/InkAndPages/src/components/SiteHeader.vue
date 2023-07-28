@@ -11,7 +11,7 @@
                 <RouterLink :to="{name:'home'}">Home</RouterLink>
             </li>
             <li>
-                <RouterLink :to="{name:'books'}">Books</RouterLink>
+                <RouterLink :to="{name:'books', params:{genre: 'new'}}">Books</RouterLink>
             </li><li>
                 <RouterLink :to="{name:'reviews'}">Reviews</RouterLink>
             </li>

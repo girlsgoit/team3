@@ -8,7 +8,7 @@ import MostPopularReviewsView from './views/MostPopularReviewsView.vue';
 
   <SiteHeader />
 
-  <RouterView />
+  <RouterView :key="$route.fullPath" />
 
   <SiteFooter />
 
