@@ -3,7 +3,7 @@
 
 <section>
     <div class="rectangle1">
-        <img class="pfp" src="../img/profile_icon_reviews.png" alt="profile picture">
+        <img class="pfp" src="./img/profile_icon_reviews.png" alt="profile picture">
         <span class="content">
         <span class="book">
         <p class="author">{{author}}</p>
@@ -13,11 +13,11 @@
         <p class="username">@{{userName}}</p>
         <p class="text">{{ text }}</p>            
         <span class="rating">
-            <img id="stea1" :src="1 <= this.rating ? './img/stea_plina.png' : './img/stea_goala.png'" alt="plin">
-            <img id="stea2" :src="2 <= this.rating ? './img/stea_plina.png' : './img/stea_goala.png'" alt="plin">
-            <img id="stea3" :src="3 <= this.rating ? './img/stea_plina.png' : './img/stea_goala.png'" alt="plin">
-            <img id="stea4" :src="4 <= this.rating ? './img/stea_plina.png' : './img/stea_goala.png'" alt="plin">
-            <img id="stea5" :src="5 <= this.rating ? './img/stea_plina.png' : './img/stea_goala.png'" alt="gol">
+            <img id="stea1" :src="1 <= this.rating ? './stea_plina.png' : './stea_goala.png'" alt="plin">
+            <img id="stea2" :src="2 <= this.rating ? './stea_plina.png' : './stea_goala.png'" alt="plin">
+            <img id="stea3" :src="3 <= this.rating ? './stea_plina.png' : './stea_goala.png'" alt="plin">
+            <img id="stea4" :src="4 <= this.rating ? './stea_plina.png' : './stea_goala.png'" alt="plin">
+            <img id="stea5" :src="5 <= this.rating ? './stea_plina.png' : './stea_goala.png'" alt="gol">
         </span>
     </span>
     </div>
@@ -28,6 +28,7 @@
 
 <script>
 export default {
+    name: "Reviews",
     props:{
         author:String,
         bookName:String,
@@ -62,7 +63,7 @@ textarea {
     padding: 5px 25px 20px 20px;
     
     position:relative;
-    top:22px;
+    margin-top: 22px;
 
     display: flex;
     }

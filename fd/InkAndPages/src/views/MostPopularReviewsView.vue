@@ -13,13 +13,23 @@ import DidYouKnow from '../components/DidYouKnow.vue';
 <style scoped>
 #review-page{
     display: flex;
-    height: 80vh;
-    
+    max-height: 80vh;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
     
 }
+
+#review-page::-webkit-scrollbar {
+  display: none;
+}
+
+
+
 #review-section{
     min-width: 70%;
     background-color: #FFE5B455;
+    height: 100%;
     padding: 5px;
     margin: 0;
 
@@ -27,7 +37,9 @@ import DidYouKnow from '../components/DidYouKnow.vue';
 
 #know-section{
     min-width: 30%;
-    height: 80vh;
+    min-height: 100%;
     margin: 0 0;
+    background-color:  rgba(248, 140, 167, 0.2);
+    border-left: 2px solid black;
 }
 </style>

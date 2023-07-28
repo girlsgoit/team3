@@ -5,7 +5,8 @@
 
         <h1>Most popular reviews</h1>
         <UserReview />
-
+        <Reviews v-for="r in reviews" :author="r.author" :bookName="r.bookName" :rating="r.rating" :text="r.text" :userName="r.userName" />
+ 
     </section>
 
 
@@ -16,7 +17,8 @@
 import { db } from '../firebase/index.js';
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
 import UserReview from './UserReview.vue'
- 
+import Reviews from './Reviews.vue';
+
 export default {
     name: "MostPopularReviewsContainer",
     data: function () {
@@ -40,7 +42,7 @@ export default {
             console.error("Error fetching data:", error);
         }
     },
-    components: { UserReview }
+    components: { UserReview, Reviews }
 }
 </script>
 <style scoped>

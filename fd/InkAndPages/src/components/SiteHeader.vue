@@ -4,7 +4,7 @@
     <a class="header_item1" href="index.html">
         <img src="./img/logo.png" alt="logo" width="50%">
         </a> 
-    <img src="./img/searchbar.png.png" id="searchbar" alt="searchbar" width="30%">
+    <img src="./img/searchbar.png" id="searchbar" alt="searchbar" width="30%">
     <nav class="header_item2">
         <ul class="menu_container">
             <li>
