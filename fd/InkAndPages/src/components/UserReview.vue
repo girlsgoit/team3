@@ -1,58 +1,82 @@
 <template>
-<body>
-<section>
+    <body>
+        <section>
 
-<div class="rectangle2">
+            <div class="rectangle2">
 
-    <img class="pfp" src="./img/profile_icon_reviews.png" alt="profile picture">
+                <div>
 
-    <span class="content"></span>
+                    <img class="pfp" src="./img/profile_icon_reviews.png" alt="profile picture">
 
-    <span class="book">
 
-    <textarea class="author">Author name</textarea>
+                    <button v-on:click="handleSubmit">POST</button>
 
-        <p>,</p>
+                </div>
 
-    <textarea class="title">Book name</textarea>
+                <span class="content">
 
-    </span>
+                    <span class="book">
 
-    <textarea class="username">@user1823719</textarea>
-    <textarea class="text2">Write your review here...</textarea>            
-    <span class="rating">
+                        <textarea class="author" placeholder="Author name" v-model="author"></textarea>
 
-        <img v-on:click="handleRating" id="stea1" src="./img/stea_goala.png" alt="gol">
-        <img v-on:click="handleRating" id="stea2" src="./img/stea_goala.png" alt="gol">
-        <img v-on:click="handleRating" id="stea2" src="./img/stea_goala.png" alt="gol">
-        <img v-on:click="handleRating" id="stea3" src="./img/stea_goala.png" alt="gol">
-        <img v-on:click="handleRating" id="stea4" src="./img/stea_goala.png" alt="gol">
-        <img v-on:click="handleRating" id="stea5" src="./img/stea_goala.png" alt="gol">
-    </span>
+                        <p>,</p>
 
-</div>
-</section>
-</body>
+                        <textarea class="title" placeholder="Book name" v-model="title"></textarea>
+
+                    </span>
+
+                    <textarea class="username" placeholder="user1823719" v-model="userName"></textarea>
+                    <textarea class="text2" placeholder="Write your review here..." v-model="text"></textarea>
+                    <span class="rating">
+
+                        <img v-on:click="handleRating" id="stea1" src="./img/stea_goala.png" alt="gol">
+                        <img v-on:click="handleRating" id="stea2" src="./img/stea_goala.png" alt="gol">
+                        <img v-on:click="handleRating" id="stea3" src="./img/stea_goala.png" alt="gol">
+                        <img v-on:click="handleRating" id="stea4" src="./img/stea_goala.png" alt="gol">
+                        <img v-on:click="handleRating" id="stea5" src="./img/stea_goala.png" alt="gol">
+                    </span>
+                </span>
+            </div>
+        </section>
+    </body>
 </template>
 <script>
+import { db } from '../firebase/index.js';
+import { getFirestore, collection, addDoc } from 'firebase/firestore';
+
 export default {
     name: "UserReview",
-    data: function(){
-        return{
+    data: function () {
+        return {
             title: '',
             author: '',
             userName: '',
             text: '',
             rating: 0,
-     }
-    
+        }
+
     },
     methods: {
-        handleSubmit: function() {
-
+        handleSubmit: async function () {
+            const review = await addDoc(collection(db, "Reviews"), {
+                author: this.author,
+                bookName: this.title,
+                rating: this.rating,
+                text: this.text,
+                userName: this.userName
+            });
+            console.log(" ", review.id);
         },
-        handleRating: function(event) {
+        handleRating: function (event) {
             console.log(event.target.id)
+            let nr = Number(event.target.id.replace("stea", ""))
+            this.rating = nr
+            for (let i = 1; i <= nr; i++) {
+                document.getElementById("stea" + i).src = "./stea_plina.png"
+            }
+            for (let i = nr + 1; i <= 5; i++) {
+                document.getElementById("stea" + i).src = "./stea_goala.png"
+            }
 
         }
     }
@@ -65,8 +89,8 @@ export default {
 
 body {
 
-font-family: 'inter';
-font-size: 12px;
+    font-family: 'inter';
+    font-size: 12px;
 
 }
 
@@ -74,106 +98,89 @@ textarea {
 
     font-family: 'inter';
     font-size: 12px;
-    
-    }
 
-.rectangle1 {
+}
+
+
+.rectangle2 {
 
     min-height: 55px;
     width: 470px;
     background-color: #FFAE7033;
-    
-    position:relative;
-    left:50px;
-    
+
+    position: relative;
+    left: 50px;
+
     border-radius: 17px;
     padding: 5px 25px 20px 20px;
-    
-    position:relative;
-    top:22px;
+
+    position: relative;
+    top: 22px;
 
     display: flex;
-    
-    }
-    
-    .rectangle2 {
- 
-        min-height: 55px;
-        width: 470px;
-        background-color: #FFAE7033;
-        
-        position:relative;
-        left:50px;
-        
-        border-radius: 17px;
-        padding: 5px 25px 20px 20px;
-        
-        position:relative;
-        top:22px;
-    
-        display: flex;
-        
-    }
+
+}
 
 .pfp {
 
-max-height: 80px;
-max-width: 80px;
+    max-height: 80px;
+    max-width: 80px;
 
-position: relative;
+    position: relative;
 
-margin-top: 10px;
+    margin-top: 10px;
 
 
 }
 
 .content {
 
-position: relative;
+    position: relative;
 
-margin-left: 18px;
+    margin-left: 18px;
 
-max-width:400px;
+    max-width: 400px;
 
 }
 
 .book {
 
-display: flex;
-padding-top:4px;
+    display: flex;
+    padding-top: 4px;
 
 }
 
 .author {
 
-font-weight: bolder;
+    font-weight: bolder;
 
 }
 
 .username {
 
-font-weight: bolder;
+    font-weight: bolder;
 
-padding:0;
-margin-top: 0;
+    padding: 0;
+    margin-top: 0;
 
 }
-.rating{
+
+.rating {
     display: flex;
 }
 
-.rating img{
+.rating img {
 
-max-width: 15px;
-max-height: 15px;
+    max-width: 15px;
+    max-height: 15px;
 
 }
 
 .text2 {
 
-color:rgb(155, 122, 81);
+    color: rgb(155, 122, 81);
 
-padding:0;
+    padding: 0;
 
 }
 
@@ -185,30 +192,48 @@ textarea {
 
     cursor: text;
 
-    resize:none;
+    resize: none;
 
-    padding-top:10px;
+    padding-top: 10px;
 
-  }
+}
 
 .text2 {
 
-width:380px;
+    width: 380px;
 
-padding-bottom: 5px;
+    padding-bottom: 5px;
 
 }
 
 .author {
 
-width:100px;
+    width: 100px;
 
 }
 
 .title {
 
-width:260px;
+    width: 260px;
 
 }
 
+button {
+
+    display: flex;
+
+    font-family: inter;
+    font-weight: bolder;
+
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 5px 7px 5px 7px;
+
+    text-decoration: none;
+    border: none;
+    background-color: #f8a16744;
+
+    border-radius: 7px;
+
+}
 </style>
