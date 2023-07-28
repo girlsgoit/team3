@@ -23,15 +23,15 @@
 </li>
 
 <li>
-    <a href="#">Terms</a>
+    <RouterLink :to="{name:'terms'}">Terms</RouterLink>
 </li>
 
 <li>
-    <a href="#">Privacy</a>
+    <RouterLink :to="{name:'privacy'}">Privacy</RouterLink>
 </li>
 
 <li>
-    <a href="#">Help</a>
+    <RouterLink :to="{name:'help'}">Help</RouterLink>
 </li>
 
 </ul>
@@ -43,7 +43,7 @@
 </li>
 
 <li>
-    <a href="#">Instagram</a>
+    <a href="https://www.instagram.com/girlsgoit/">Instagram</a>
 </li>
 
 <li>
@@ -82,6 +82,7 @@ import { RouterLink } from 'vue-router';
 export default {
     name: 'SiteFooter',
     components: { RouterLink }
+
 }
 </script>
 <style>
