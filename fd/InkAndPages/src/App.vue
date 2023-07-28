@@ -6,9 +6,11 @@ import SiteHeader from './components/SiteHeader.vue';
 <template>
 
   <SiteHeader />
+
   <RouterView />
 
   <SiteFooter />
+
 </template>
 
 <style>

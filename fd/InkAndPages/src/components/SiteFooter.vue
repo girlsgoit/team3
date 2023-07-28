@@ -84,7 +84,7 @@ export default {
 
 }
 </script>
-<style>
+<style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
 
