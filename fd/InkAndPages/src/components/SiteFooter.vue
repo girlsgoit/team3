@@ -46,15 +46,15 @@
 </li>
 
 <li>
-    <a href="#">Facebook</a>
+    <a href="https://www.facebook.com/GGITmoldova">Facebook</a>
 </li>
 
 <li>
-    <a href="#">LinkedIn</a>
+    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj8wtzs766AAxU60QIHHXHrAzkQFnoECBAQAQ&url=https%3A%2F%2Fmd.linkedin.com%2Fcompany%2Fgirlsgoit&usg=AOvVaw1b6EXOkYmWpsITaEvcW89i&opi=89978449">LinkedIn</a>
 </li>
 
 <li>
-    <a href="#">Twitter</a>
+    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj0nfX7766AAxWQ2gIHHRpxAWkQFnoECA8QAQ&url=https%3A%2F%2Ftwitter.com%2FGirlsGoIT&usg=AOvVaw0M2dH3m2qQZOUor4elfY6c&opi=89978449">Twitter</a>
 </li>
 
 </ul>

@@ -4,19 +4,19 @@
     <a class="header_item1" href="index.html">
         <img src="./img/logo.png" alt="logo" width="50%">
         </a> 
-    <img src="./img/searchbar.png.png" id="searchbar" alt="searchbar" width="30%">
+    <img src="./img/searchbar.png" id="searchbar" alt="searchbar">
     <nav class="header_item2">
         <ul class="menu_container">
             <li>
                 <RouterLink :to="{name:'home'}">Home</RouterLink>
             </li>
             <li>
-                <RouterLink :to="{name:'books'}">Books</RouterLink>
+                <RouterLink :to="{name:'books', params:{genre: 'new'}}">Books</RouterLink>
             </li><li>
                 <RouterLink :to="{name:'reviews'}">Reviews</RouterLink>
             </li>
             <li>
-                <RouterLink :to="{name:'sing in'}">Sing In</RouterLink>
+                <RouterLink :to="{name:'sign in'}">Sign In</RouterLink>
             </li>
             <li>
                 <RouterLink :to="{name:'community'}">Community</RouterLink>
@@ -46,6 +46,7 @@ export default {}
 #searchbar{
     position: relative;
     top:20px;
+    width:30%
 }
 
 .header_container a img{

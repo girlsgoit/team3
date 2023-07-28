@@ -1,17 +1,17 @@
 <template>
-    <section id="review-page">
-        <MostPopularReviewsContainer id="review-section"/>
-        <DidYouKnow id="know-section" />
-    </section>
-
+<section id="books-page">
+    <Books id="books-section" />
+    <ChooseByGeanres id="genres-section"/>
+</section>
 </template>
-<script>
-import MostPopularReviewsContainer from  '../components/MostPopularReviewsContainer.vue'
-import DidYouKnow from '../components/DidYouKnow.vue';
 
+<script>
+import Books from '../components/Books.vue'
+import ChooseByGeanres from '../components/ChooseByGeanres.vue';
 </script>
-<style scoped>
-#review-page{
+
+<style scoped> 
+#books-page{
     display: flex;
     max-height: 80vh;
     overflow: scroll;
@@ -21,26 +21,29 @@ import DidYouKnow from '../components/DidYouKnow.vue';
 
     
 }
-
-#review-page::-webkit-scrollbar {
+#books-page::-webkit-scrollbar {
   display: none;
 }
 
 
 
-#review-section{
+#books-section{
     min-width: 70%;
     background-color: #FFE5B455;
+
     height: 100%;
-    padding: 5px;
+    padding: 5px 0 5px 90px;
     margin: 0;
     border-right: 2px solid black;
 
 }
 
-#know-section{
-    min-width: 28%;
+#genres-section{
+    min-width: 23%;
     min-height: 100%;
     margin: 0 0;
 }
+
+
+ 
 </style>

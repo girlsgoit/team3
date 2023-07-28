@@ -6,14 +6,19 @@ import MostPopularReviewsView from './views/MostPopularReviewsView.vue';
 
 <template>
 
-  <SiteHeader />
+<SiteHeader />
 
-  <RouterView />
+  <RouterView :key="$route.fullPath" />
 
   <SiteFooter />
 
+  
+
 </template>
 
-<style>
+<style scoped>
+html{
+  padding: 0 auto;
+}
 </style>
 

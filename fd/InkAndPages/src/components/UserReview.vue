@@ -66,17 +66,26 @@ export default {
                 userName: this.userName
             });
             console.log(" ", review.id);
+            this.author =""
+            this.bookName=""
+            this.rating=0
+            this.text=""
+            this.userName="" 
+            this.changeCani()
+        },
+        changeCani: function(){
+            for (let i = 1; i <= this.rating; i++) {
+                this.$el.querySelector("#stea" + i).src = "./stea_plina.png"
+            }
+            for (let i = this.rating + 1; i <= 5; i++) {
+                this.$el.querySelector("#stea" + i).src = "./stea_goala.png"
+            }
         },
         handleRating: function (event) {
             console.log(event.target.id)
             let nr = Number(event.target.id.replace("stea", ""))
             this.rating = nr
-            for (let i = 1; i <= nr; i++) {
-                document.getElementById("stea" + i).src = "./stea_plina.png"
-            }
-            for (let i = nr + 1; i <= 5; i++) {
-                document.getElementById("stea" + i).src = "./stea_goala.png"
-            }
+            this.changeCani()
 
         }
     }
@@ -115,7 +124,7 @@ textarea {
     padding: 5px 25px 20px 20px;
 
     position: relative;
-    top: 22px;
+    margin-top: 22px;
 
     display: flex;
 
@@ -204,6 +213,13 @@ textarea {
 
     padding-bottom: 5px;
 
+-ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+    
+}
+
+.text2::-webkit-scrollbar {
+  display: none;
 }
 
 .author {
