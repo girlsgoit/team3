@@ -6,18 +6,18 @@
         <img class="pfp" src="../img/profile_icon_reviews.png" alt="profile picture">
         <span class="content">
         <span class="book">
-        <p class="author">Jane Austen</p>
-        <p class="title">, Pride and prejudice</p>
+        <p class="author">{{author}}</p>
+        <p class="title">, {{ bookName }}</p>
         </span>
 
-        <p class="username">@user3932890</p>
-        <p class="text">Best book ever! This is my favourite book! Although, lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis esse facilis odio temporibus cum, quae enim ad ex, tempore inventore amet!</p>            
+        <p class="username">@{{userName}}</p>
+        <p class="text">{{ text }}</p>            
         <span class="rating">
-            <img id="stea1" src="../img/stea_plina.png" alt="plin">
-            <img id="stea2" src="../img/stea_plina.png" alt="plin">
-            <img id="stea3" src="../img/stea_plina.png" alt="plin">
-            <img id="stea4" src="../img/stea_plina.png" alt="plin">
-            <img id="stea5" src="../img/stea_goala.png" alt="gol">
+            <img id="stea1" :src="1 <= this.rating ? './img/stea_plina.png' : './img/stea_goala.png'" alt="plin">
+            <img id="stea2" :src="2 <= this.rating ? './img/stea_plina.png' : './img/stea_goala.png'" alt="plin">
+            <img id="stea3" :src="3 <= this.rating ? './img/stea_plina.png' : './img/stea_goala.png'" alt="plin">
+            <img id="stea4" :src="4 <= this.rating ? './img/stea_plina.png' : './img/stea_goala.png'" alt="plin">
+            <img id="stea5" :src="5 <= this.rating ? './img/stea_plina.png' : './img/stea_goala.png'" alt="gol">
         </span>
     </span>
     </div>
@@ -27,13 +27,21 @@
 </template>
 
 <script>
-
+export default {
+    props:{
+        author:String,
+        bookName:String,
+        rating:Number,
+        text:String,
+        userName:String,
+    }
+}
 </script>
 
-<style>
+<style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 body {
-font-family: inter;
+font-family: 'inter';
 font-size: 12px;
 }
 

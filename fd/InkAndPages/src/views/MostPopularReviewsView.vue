@@ -13,13 +13,21 @@ import DidYouKnow from '../components/DidYouKnow.vue';
 <style scoped>
 #review-page{
     display: flex;
+    height: 80vh;
+    
     
 }
 #review-section{
     min-width: 70%;
+    background-color: #FFE5B455;
+    padding: 5px;
+    margin: 0;
+
 }
 
 #know-section{
     min-width: 30%;
+    height: 80vh;
+    margin: 0 0;
 }
 </style>
