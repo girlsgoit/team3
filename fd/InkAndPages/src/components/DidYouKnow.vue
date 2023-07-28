@@ -1,32 +1,49 @@
 <template>
-<head>
-<title>Did you know</title>
-<link rel="stylesheet" href="style.css">
-</head>
 <body>
     <section class="know_container" id="left">
         <ul title="Did you know?">
-            <li>There are around 130 million published books.</li>
-            <li>The most sold book is the Bible.</li>
-            <li>The longest book in the world is ‘Remembrance of Things Past’.</li>
-            <li>The first ever story written was‘The Epic of Gilgamesh’ .</li>
-            <li>The fear of running out of something to read is called Abibliophobia.</li>
+            <li  v-for="item in funFacts">{{ item.text }}</li>
         </ul>
 
     </section>
 </body>
 </template>
 <script>
+import { db } from '../firebase/index.js';
+import { getFirestore, collection, getDocs } from 'firebase/firestore';
+
+export default {
+    name: "DidYouKnow",
+    data: function(){
+        return{
+            funFacts:[ ]
+        }
+    },
+    methods:{
+        async getData(factsCol){
+            const querySnapshot = await getDocs(factsCol);
+            return querySnapshot.docs.map((doc) => doc.data());
+        }
+    },
+    async beforeMount() {
+    try {
+            const factsCol = collection(db, "FunFacts");
+            this.funFacts = await this.getData(factsCol);
+            console.log(this.funFacts);
+        } catch (error) {
+            console.error("Error fetching data:", error);
+        }
+    }
+}
+
 </script>
 <style scoped>
 
 
 #left {
-    position:absolute;
     right:0px;
     top:0px;
     bottom:0px;
-    width: 30%;
     background-color:  rgba(248, 140, 167, 0.2);
     color:white;
    
@@ -48,7 +65,7 @@ ul{
     flex-direction: column;
     justify-content: space-evenly;
     list-style-type: none;
-    height: 100vh;
+    height: 100%;
 }
 
 li{
