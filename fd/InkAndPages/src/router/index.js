@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import SiteFooter from "../components/SiteFooter.vue"
 import SiteHeader from "../components/SiteHeader.vue"
+import MostPopularReviewsView from "../views/MostPopularReviewsView.vue"
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -46,7 +47,7 @@ const router = createRouter({
     {
       path: '/reviews',
       name: 'reviews',
-      component: SiteHeader
+      component: MostPopularReviewsView
     },
     {
       path: '/sing in',
