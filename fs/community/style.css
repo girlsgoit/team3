@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+SA+Beginner&family=Lobster&family=Oswald:wght@600&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+#right {
+    position:absolute;
+    left:0px;
+    top:0px;
+    bottom:0px;
+    width: 70%;
+    background-color:  rgba(255, 229, 180, 0.2);
+}
+
+#title {
+    font-weight: bold;
+
+    color: black;
+    text-align: left;
+    font-size: 50px;
+    padding-left: 60px;
+    padding-top: 10px;
+}
+
+
+.book1 h4{
+    font-size:medium !important;
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 60px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    height: 0.1vh;
+    
+}
+
+
+#name1{
+    font-size:medium !important;
+    color: black;
+    text-align: left;
+    font-size: 20px;
+   padding-left: 60px;
+   height: 0.1vh;
+}
+
+.book1 h3{
+    color: black;
+    text-align: left;
+    font-size: 20px;
+   padding-left: 60px;
+   height: 0.1vh;
+}
+
+p{
+
+    font-family: 'Roboto Condensed', sans-serif; 
+    color: black;
+    text-align: left;
+   padding-left: 60px;
+   padding-right: 60px;
+}
+
+
+
+
+
+
+
+.book2 h4{
+    font-size:medium !important;
+    color: black;
+    text-align: left;
+    padding-left: 60px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    height: 0.01vh;
+    
+}
+
+
+#name2{
+    font-size:medium !important;
+    color: black;
+    text-align: left;
+    font-size: 20px;
+   padding-left: 60px;
+   
+}
+
+.book2 h3{
+    color: black;
+    text-align: left;
+    font-size: 20px;
+   padding-left: 60px;
+   height: 0.1vh;
+}
+
+.book2 p {
+
+    font-family: 'Roboto Condensed', sans-serif; 
+    font-size: large;
+    color: black;
+    text-align: left;
+   padding-left: 60px;
+   padding-right: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.book3 h4{
+    font-size:medium !important;
+    color: black;
+    text-align: left;
+    padding-left: 60px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    height: 0.01vh;
+    
+}
+
+
+#name3{
+    font-size:medium !important;
+    color: black;
+    text-align: left;
+    font-size: 20px;
+   padding-left: 60px;
+   
+}
+
+.book3 h3{
+    color: black;
+    text-align: left;
+    font-size: 20px;
+   padding-left: 60px;
+   height: 0.1vh;
+}
+
+.book3 p {
+
+    font-family: 'Roboto Condensed', sans-serif; 
+    font-size: large;
+    color: black;
+    text-align: left;
+   padding-left: 60px;
+   padding-right: 60px;
+}
+
+
