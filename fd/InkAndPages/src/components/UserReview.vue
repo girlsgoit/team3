@@ -72,6 +72,7 @@ export default {
             this.text=""
             this.userName="" 
             this.changeCani()
+            this.$router.go()
         },
         changeCani: function(){
             for (let i = 1; i <= this.rating; i++) {

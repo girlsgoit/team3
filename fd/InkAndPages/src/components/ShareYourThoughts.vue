@@ -22,6 +22,7 @@
 
 
 <script>
+import { vModelCheckbox } from 'vue';
 import { db } from '../firebase/index.js';
 import { getFirestore, collection, addDoc, Timestamp } from 'firebase/firestore';
 export default {
@@ -47,6 +48,7 @@ export default {
             this.Text=""
             this.Title=""
             this.UserName="" 
+            this.$router.go()
         }
     }
 }
