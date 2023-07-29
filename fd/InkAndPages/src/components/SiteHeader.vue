@@ -4,22 +4,22 @@
     <a class="header_item1" href="index.html">
         <img src="./img/logo.png" alt="logo" width="50%">
         </a> 
-    <img src="./img/searchbar.png.png" id="searchbar" alt="searchbar" width="30%">
+    <img src="./img/searchbar.png" id="searchbar" alt="searchbar">
     <nav class="header_item2">
         <ul class="menu_container">
             <li>
-                <a href="index.html">Home</a>
+                <RouterLink :to="{name:'home'}">Home</RouterLink>
             </li>
             <li>
-                <a href="index.html">Books</a>
+                <RouterLink :to="{name:'books', params:{genre: 'new'}}">Books</RouterLink>
             </li><li>
-                <a href="index.html">Reviews</a>
+                <RouterLink :to="{name:'reviews'}">Reviews</RouterLink>
             </li>
             <li>
-                <a href="index.html">Sign In</a>
+                <RouterLink :to="{name:'sign in'}">Sign In</RouterLink>
             </li>
             <li>
-                <a href="index.html">Community</a>
+                <RouterLink :to="{name:'community'}">Community</RouterLink>
             </li>
         
         </ul>
@@ -32,7 +32,7 @@ export default {}
 
 
 </script>
-<style>
+<style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 .header_container {
     background-color:  #713E5A;
@@ -46,6 +46,7 @@ export default {}
 #searchbar{
     position: relative;
     top:20px;
+    width:30%
 }
 
 .header_container a img{
