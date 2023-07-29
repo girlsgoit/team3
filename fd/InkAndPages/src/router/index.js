@@ -3,13 +3,14 @@ import SiteFooter from "../components/SiteFooter.vue"
 import SiteHeader from "../components/SiteHeader.vue"
 import MostPopularReviewsView from "../views/MostPopularReviewsView.vue"
 import BooksView from "../views/BooksView.vue"
+import LandingPage from "../components/LandingPage.vue"
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
       name: 'home',
-      component: SiteFooter
+      component: LandingPage
     },
     {
       path: '/about',
@@ -17,7 +18,7 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: SiteFooter
+      component: LandingPage
     },
     {
       path: '/terms',
@@ -34,11 +35,6 @@ const router = createRouter({
       path: '/help',
       name: 'help',
       component: SiteFooter
-    },
-    {
-      path: '/home',
-      name: 'home',
-      component: SiteHeader
     },
     {
       path: '/books/:genre',
