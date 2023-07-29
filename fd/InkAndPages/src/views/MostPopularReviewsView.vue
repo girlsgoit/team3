@@ -1,7 +1,7 @@
 <template>
     <section id="review-page">
         <MostPopularReviewsContainer id="review-section"/>
-        <DidYouKnow id="know-section" />
+        <DidYouKnow id="know-section"/>
     </section>
 
 </template>
@@ -17,7 +17,7 @@ import DidYouKnow from '../components/DidYouKnow.vue';
     overflow: scroll;
     background-color:  rgba(248, 140, 167, 0.4);
     -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+    scrollbar-width: none;  /* Firefox */
 
     
 }

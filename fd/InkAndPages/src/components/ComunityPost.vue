@@ -4,7 +4,7 @@
                 {{ Title }}
             </h4>
             <h4 class="name1">
-                @{{ UserName }}
+                {{ UserName }}
             </h4>
             <h3>
                 {{Data}}
@@ -18,6 +18,7 @@
 
 <script>
 export default{
+    name: "ComunityPost",
     props:{
      Data:String,
      Text:String,

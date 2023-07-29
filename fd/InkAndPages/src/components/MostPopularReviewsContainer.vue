@@ -48,11 +48,6 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap&display=swap');
 
-body {
-
-
-}
-
 .popreview {
 
 font-family:"koh santepheap";

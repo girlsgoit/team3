@@ -3,6 +3,7 @@ import SiteFooter from "../components/SiteFooter.vue"
 import SiteHeader from "../components/SiteHeader.vue"
 import MostPopularReviewsView from "../views/MostPopularReviewsView.vue"
 import BooksView from "../views/BooksView.vue"
+import ComunityView from '../views/ComunityView.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -59,7 +60,7 @@ const router = createRouter({
     {
       path: '/community',
       name: 'community',
-      component: SiteHeader
+      component: ComunityView
     }
   
   ]
