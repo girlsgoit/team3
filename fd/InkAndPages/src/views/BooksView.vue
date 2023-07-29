@@ -45,5 +45,6 @@ import ChooseByGeanres from '../components/ChooseByGeanres.vue';
 }
 
 
+
  
 </style>

@@ -49,6 +49,7 @@ export default {
     top: 0px;
     bottom: 0px;
     width: 70%;
+    height: 100%;
     background-color: rgba(255, 229, 180, 0.2);
 }
 

@@ -1,9 +1,9 @@
 <template>
 <!--Header-->
 <header class="header_container">
-    <a class="header_item1" href="index.html">
+    <RouterLink :to="{name:'home'}">
         <img src="./img/logo.png" alt="logo" width="50%">
-        </a> 
+    </RouterLink> 
     <img src="./img/searchbar.png" id="searchbar" alt="searchbar">
     <nav class="header_item2">
         <ul class="menu_container">
