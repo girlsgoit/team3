@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Judson&display=swap');
 #left {
     position:absolute;
+
     right:0px;
     top:0px;
     bottom:0px;
     width: 30%;
+
     background-color:  rgba(248, 140, 167, 0.2);
     color:white;
+    border-radius:20px;
    
 }
 
@@ -13,7 +18,6 @@ ul[title]::before {
     content: attr(title);
     font-weight: bold;
     color: black;
-    /* text-align: right; */
     font-size: 30px;
 
      
@@ -21,6 +25,13 @@ ul[title]::before {
 
 h1 {
     align-items: center;
+    text-align: center;
+
+    margin-top:5px;
+
+    font-family: "koh santepheap";
+    font-weight:900;
+
     color: black;
 }
 
@@ -30,6 +41,8 @@ h1 {
     display: flex;
     flex-direction: column;
     padding: 50px;
+    padding-top:20px;
+    max-height:10px;
 }
 
 h5{
@@ -39,12 +52,14 @@ h5{
 
 #left2 {
     position:absolute;
+
     right:20px;
     left: 25px;
     top: 300px;
     bottom: 20px;
-    background-color:  rgba(248, 140, 167, 0.2);
+
     color:white;
+    border-radius:20px;
    
 }
 
@@ -52,4 +67,86 @@ h5{
     color: black;
     padding-left: 25px;
     
+}
+
+.answer {
+
+height:250px;
+width:339px;
+
+}
+
+textarea {
+    background: rgba(248, 140, 167, 0.2);
+    border: none;
+    outline: 0;
+    cursor: text;
+    resize:none;
+    border-radius:20px;
+    
+  }
+
+::placeholder {
+
+position: relative;
+
+
+font-family: judson;
+font-size:20px;
+text-align: center;
+
+line-height: 40px;
+
+}
+
+.user {
+
+position: relative;
+
+text-align: center;
+margin-top:5px;
+
+font-family: judson;
+font-size:20px;
+
+line-height: 25px;
+
+}
+
+.pfp {
+
+margin-bottom:10px;
+
+}
+
+.answer {
+
+    position: relative;
+
+    text-align: left;
+    margin-top:5px;
+    
+    font-family: judson;
+    font-size:20px;
+    
+    line-height: 25px;
+
+}
+
+button {
+
+margin-left:150px;
+margin-top:500px;
+
+background-color: rgba(245, 128, 143, 0.39);
+border: none;
+color: rgb(56, 9, 9);
+font-family: judson;
+font-size: 20px;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+
+border-radius: 15px;
+
 }
