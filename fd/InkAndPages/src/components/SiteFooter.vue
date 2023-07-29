@@ -42,7 +42,7 @@
 </li>
 
 <li>
-    <a href="https://www.instagram.com/girlsgoit/">Instagram</a>
+    <a href="https://instagram.com/girlsgoit_moldova?igshid=MzRlODBiNWFlZA==">Instagram</a>
 </li>
 
 <li>
