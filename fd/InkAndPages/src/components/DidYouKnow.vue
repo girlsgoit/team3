@@ -41,10 +41,11 @@ export default {
 
 
 #left {
+    
     right:0px;
     top:0px;
     bottom:0px;
-    background-color:  rgba(248, 140, 167, 0.2);
+    height: 100%;
     color:white;
    
 }
@@ -66,6 +67,7 @@ ul{
     justify-content: space-evenly;
     list-style-type: none;
     height: 100%;
+    margin: 0;
 }
 
 li{
